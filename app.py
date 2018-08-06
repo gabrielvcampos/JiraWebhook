@@ -2,7 +2,7 @@ from flask import request
 from flask import Flask
 from flask import jsonify
 from flasgger import Swagger
-
+from flasgger import swag_from
 
 app = Flask(__name__)
 Swagger = Swagger(app)
@@ -10,6 +10,7 @@ Swagger = Swagger(app)
 
 
 @app.route("/api/v1/create_issue", methods=["POST"])
+@swag_from("swagger/create_issue.yml")
 def create_issue():
     data = str(request.json)
     
