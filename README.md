@@ -1,2 +1,4 @@
 # JiraWebhook
-Webhook to integrate jira and habitica issues and tasks
+A simple webhook to integrate issues and tasks between Jira and Habitica
+
+
